@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js",
+    "start:watch": "NODE_ENV=development nodemon -q src/index.js",
+    "heroku-postbuild": "webpack -p --config webpack.config.js --progress",
+    "build": "webpack && babel src --out-dir lib --copy-files",
+    "dev:build": "webpack --watch",
+    "dev:start": "nodemon --exec babel-node ./src/",
+    "lint": "eslint src"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Walidmash/react-redux-example.git"

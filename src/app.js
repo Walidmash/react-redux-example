@@ -2,9 +2,7 @@ const express = require('express');
 const path = require('path');
 const routes = require('./controllers/api/v1/index');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser');
 const app = express();
-app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -25,6 +23,4 @@ app.use((err, req, res) => {
 });
 app.set('port', process.env.PORT || 4000);
 
-module.exports= {
-  server
-};
+module.exports= server;
