@@ -1,5 +1,5 @@
 module.exports = {
-  getPosts: require('./getPosts'),
-  getPost: require('./getPost'),
-  postPost: require('./postPost')
+  getJobs: require('./getJobs'),
+  getJob: require('./getJob')
+  // postJob: require('./postJob')
 };
