@@ -6,9 +6,11 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <div>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/create-posts'>Post new job</NavLink>
+      <div className='container'>
+        <div className='navbar__links'>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/create-posts'>Post new job</NavLink>
+        </div>
       </div>
     </nav>
   );
