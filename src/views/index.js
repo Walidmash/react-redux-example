@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import configureStore from './configure-store.js';
 import Home from './components/home';
+import CreateNewJop from './components/createNewjop';
 import PageNotFound from './components/pageNotFound';
 import Navbar from './components/navbar';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/create-posts' component={CreateNewJop} />
           <Route path='/' component={PageNotFound} />
         </Switch>
       </div>

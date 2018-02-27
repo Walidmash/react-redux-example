@@ -1,7 +1,14 @@
 import React from 'react';
+import CreateJobForm from './createJobForm';
+import './index.css';
 
-const CreateJop = () => {
-  return (<div/>);
+const CreateJob = () => {
+  return (
+    <div className='newJob outerContainer'>
+      <h2 className='newJob__title'>Create a new job</h2>
+      <CreateJobForm />
+    </div>
+  );
 };
 
-export default CreateJop;
+export default CreateJob;
