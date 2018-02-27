@@ -1,0 +1,25 @@
+.home__main {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  padding: 20px 0px;
+}
+.home__job {
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+.home__job:last-child {
+  border: none;
+}
+.home__subNav-link {
+  font-weight: 400;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  color: gray;
+}
+.home__subNav-link--active {
+  color: black;
+  font-weight: 600; 
+}
