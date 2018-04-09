@@ -1,0 +1,59 @@
+.newJob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.newJob__title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.createJobForm {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+}
+
+.createJobForm__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.createJobForm__field-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.createJobForm__field-input {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  box-shadow: 0px 1px 3px #eee;
+  padding: 10px;
+}
+
+.createJobForm__btn {
+  height: 40px;
+  width: 50%;
+  align-self: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px #eee;
+  outline: 0;
+  cursor: pointer;
+  background-color: #26C281;
+  color: white;
+}
